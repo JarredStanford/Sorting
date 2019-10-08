@@ -32,3 +32,14 @@ def bubble_sort( arr ):
 def count_sort( arr, maximum=-1 ):
 
     return arr
+
+#hacker rank
+def area(cases):
+    answer = []
+    for i in cases:
+        dimensions = min(i)
+        dimension_total = 0
+        for j in range(0, dimensions):
+            dimension_total += (i[0] - j) * (i[1] - j)
+        answer.append(dimension_total)
+    return answer
